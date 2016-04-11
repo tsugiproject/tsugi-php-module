@@ -109,7 +109,7 @@ Running (Advanced Configuration)
 
 Once it is installed and configured, you can do an LTI launch to
 
-    http://localhost:8888/tsugi-php-module/grade/index.php
+    http://localhost:8888/tsugi-php-module/index.php
     key: 12345
     secret: secret
 
