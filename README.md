@@ -1,20 +1,28 @@
 
-Tsugi Sample PHP Module
+Tsugi PHP Sample Module
 =======================
 
-This provides a simple starting point for a Tsugi application. This
-code depends on the main Tsugi code for database configuration,
-setup, developer test harness, CASA support, Content Item Support, etc.
+There are two ways to use the Tsugi library/framework:
 
-The idea is that when you are starting a new Tsugi application, you download 
+* You can build a "Tsugi Module" from scratch following all of the
+Tsugi style guidance, using the Tsugi browser environment, and
+making full use of the Tsugi framework.  
+This repository contains a basic "Tsugi Module" you can use 
+as a starting point.
+
+* You can use Tsugi more like a library and add it to an existing
+application.   We also have starting code for
+[Using Tsugi With an Existing Application](https://github.com/csev/tsugi-php-standalone)
+
+Both of these approaches depend on the 
+[Tsugi Devloper/Admin Console](https://github.com/csev/tsugi)
+for database configuration, setup, developer test harness, 
+CASA support, Content Item Support, etc.
+
+The idea is that when you are starting a new Tsugi Module, you download 
 the code for this application as your starting point and then edit from there.
 It is probably a bad idea to fork this repository as you don't really want to 
 track updates to this sample code.
-
-Once you start developing Tsugi Applications, you should join the Tsugi 
-Developers list so you can get announcements when things change.
-
-    https://groups.google.com/a/apereo.org/forum/#!forum/tsugi-dev
 
 Simple Installation
 -------------------
@@ -68,6 +76,18 @@ LTI 1.x launches simply are directed to the index.php in this folder:
     secret: secret
 
 Keys and secrets are managed through the controlling Tsugi.
+
+Tsugi Developer List
+--------------------
+
+Once you start developing Tsugi Applications or Modules, you should join the Tsugi
+Developers list so you can get announcements when things change.
+
+    https://groups.google.com/a/apereo.org/forum/#!forum/tsugi-dev
+
+Once you have joined, you can send mail to tsugi-dev@apereo.org
+
+
 
 Advanced Installation
 ---------------------
