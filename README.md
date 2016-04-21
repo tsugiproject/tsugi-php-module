@@ -6,9 +6,8 @@ There are two ways to use the Tsugi library/framework:
 
 * You can build a "Tsugi Module" from scratch following all of the
 Tsugi style guidance, using the Tsugi browser environment, and
-making full use of the Tsugi framework.  
-This repository contains a basic "Tsugi Module" you can use 
-as a starting point.
+making full use of the Tsugi framework - this repository contains
+a basic "Tsugi Module" you can use as a starting point.
 
 * You can use Tsugi more like a library and add it to an existing
 application.   We also have starting code for
