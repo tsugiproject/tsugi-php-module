@@ -2,6 +2,8 @@
 Tsugi PHP Sample Module
 =======================
 
+This is a component of the [Tsugi PHP Project](https://github.com/csev/tsugi).
+
 There are two ways to use the Tsugi library/framework:
 
 * You can build a "Tsugi Module" from scratch following all of the
