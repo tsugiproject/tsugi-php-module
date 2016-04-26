@@ -91,7 +91,9 @@ is no automatic connection between Tsugi developer tools and Tsugi admin
 tools won't know about this tool.
 
 To run this Tsugi Module as standalone, you should read and adapt the installation
-steps in the 
-[Using Tsugi With Standlone Application](https://github.com/csev/tsugi-php-standalone)
+steps in the
+[Advanced Installation](https://github.com/csev/tsugi-php-standalone#advanced-installation)
+section of the
+[Using Tsugi With an Existing Application](https://github.com/csev/tsugi-php-standalone)
 respository.
 
