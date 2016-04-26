@@ -40,9 +40,9 @@ could check this code out into one of several places:
     htdocs/php-intro/tools/tsugi-php-module
 
 Once you have checked this code out, you need to make a config.php that
-simply includes the `config.php` from the Tsugi directory.   For example
-if you checked this code into a "peer" folder next to `tsugi`, your
-`config.php` in this folder should be:
+simply includes the `config.php` from the Tsugi directory. There is 
+already a `config.php` that paints to the Tsugi configuration if you 
+are in the suggested location of a peer folder.
 
     <?php 
     require_once "../tsugi/config.php";
@@ -52,29 +52,25 @@ for files like `index.php`, `register.php`, and `database.php`.
 To do this, edite the `$CFG->tool_folders` parameter in the 
 Tsugi `config.php` file to include the relative path to this tool.
 
-    $CFG->tool_folders = array("admin", "mod", "samples", 
-        "exercises", "../tsugi-php-module");
+    $CFG->tool_folders = array("admin", "mod", ... ,
+         "../tsugi-php-module");
 
-If you checked the tool out into the `mod` folder with Tsugi - you may
-not need to change this configuration value as `mod` is already searched 
-to find tools.
-
-Running The Application
------------------------
-
-Once you have connected this tool to a Tsugi install as described above, 
-you can use the Admin/Database Upgrade feature to create / maintain database 
-tables for this tool.  You can also use the Developer mode of that Tsugi to
+Once you have connected this tool to a Tsugi install as described above,
+you can use the Admin/Database Upgrade feature to create / maintain database
+tables for these tools.  You can also use the Developer mode of that Tsugi to
 test launch this tool.   The LTI 2.0 support, CASA Support, and Content Item
 support for the controlling Tsugi will know about this tool.
 
-LTI 1.x launches simply are directed to the index.php in this folder:
+Launching and Testing This Code
+-------------------------------
 
-    http://localhost:8888/tsugi-php-module/grade/index.php
-    key: 12345
-    secret: secret
+To launch the tools (assuming installed as described above) go to:
 
-Keys and secrets are managed through the controlling Tsugi.
+    http://localhost/tsugi/dev.php
+    http://localhost:8888/tsugi/dev.php  (for MAMP)
+
+And all these tools should show up in the drop-down for easy testing
+and launching.
 
 Tsugi Developer List
 --------------------
@@ -86,74 +82,16 @@ Developers list so you can get announcements when things change.
 
 Once you have joined, you can send mail to tsugi-dev@apereo.org
 
-
-
 Advanced Installation
 ---------------------
 
 If you are going to install this tool in a web server that does not
 already have an installed copy of Tsugi, it is a bit trickier.  There
 is no automatic connection between Tsugi developer tools and Tsugi admin 
-tools won't know about this tool.   But it can run stand alone.
+tools won't know about this tool.
 
-First install composer to include dependencies.
-
-    http://getcomposer.org/
-
-I just do this in the folder:
-
-    curl -O https://getcomposer.org/composer.phar
-
-Get a copy of the latest `composer.json` file from the Tsugi repository
-or a recent Tsugi installation and copy it into this folder.
-
-To install the dependencies into the `vendor` area, do:
-
-    php composer.phar install
-
-If you want to upgrade dependencies (perhaps after a `git pull`) do:
-
-    php composer.phar update
-
-Note that the `composer.lock` file and `vendor` folder are 
-both in the `.gitignore` file and so they won't be checked into
-any repo.
-
-For advanced configuation, you need to retrieve a copy of 
-`config-dist.php` from the Tsugi repo or a copy of `config.php`
-from a Tsugi install and place the file in this folder.
-
-Running (Advanced Configuration)
---------------------------------
-
-Once it is installed and configured, you can do an LTI launch to
-
-    http://localhost:8888/tsugi-php-module/index.php
-    key: 12345
-    secret: secret
-
-You can use your Tsugi installation or my test harness at:
-
-    https://online.dr-chuck.com/sakai-api-test/lms.php
-
-And it should work!
-
-Upgrading the Library Code (Advanced Configuration)
----------------------------------------------------
-
-From time to time the library code in
-
-    https://github.com/csev/tsugi-php
-
-Will be upgraded and pulled into Packagist:
-
-    https://packagist.org/packages/tsugi/lib
-
-To get the latest version from Packagist, edit `composer.json` and
-update the commit hash to the latest hash on the `packagist.org` site
-and run:
-
-    php composer.phar update
-
-
+To run this Tsugi Module as standalone, you should read and adapt the installation
+steps in the 
+[Using Tsugi With Standlone Application](https://github.com/csev/tsugi-php-standalone)
+respository.
 
