@@ -13,10 +13,10 @@ a basic "Tsugi Module" you can use as a starting point.
 
 * You can use Tsugi more like a library and add it to an existing
 application.   We also have starting code for
-[Using Tsugi With an Existing Application](https://github.com/tsugitools/tsugi-php-standalone)
+[Using Tsugi With an Existing Application](https://github.com/tsugiproject/tsugi-php-standalone)
 
 Both of these approaches depend on the 
-[Tsugi Devloper/Admin Console](https://github.com/tsugitools/tsugi)
+[Tsugi Devloper/Admin Console](https://github.com/tsugiproject/tsugi)
 for database configuration, setup, developer test harness, 
 CASA support, Content Item Support, etc.
 
@@ -94,8 +94,8 @@ tools won't know about this tool.
 
 To run this Tsugi Module as standalone, you should read and adapt the installation
 steps in the
-[Advanced Installation](https://github.com/tsugitools/tsugi-php-standalone#advanced-installation)
+[Advanced Installation](https://github.com/tsugiproject/tsugi-php-standalone#advanced-installation)
 section of the
-[Using Tsugi With an Existing Application](https://github.com/tsugitools/tsugi-php-standalone)
+[Using Tsugi With an Existing Application](https://github.com/tsugiproject/tsugi-php-standalone)
 respository.
 
